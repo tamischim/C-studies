@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main () {
+
+    int idade1, idade2;
+    double media;
+    char nome1[50], nome2[50];
+
+    printf    ("SISTEMA UNICO DE SAUDE %\n");
+    printf    ("Registro de idades %\n");
+    printf    ("Digite o nome da primeira pessoa: ");
+    gets      (nome1);
+    printf    ("Digite a idade da primeira pessoa: ");
+    scanf     ("%d", &idade1);
+
+    printf    ("Digite o nome da segunda pessoa: ");
+    fseek     (stdin, 0, SEEK_END);
+    gets      (nome2);
+    printf    ("Digite a idade da segunda pessoa: ");
+    scanf     ("%d", &idade2);
+
+    media = (idade1 + idade2) / 2.0;
+
+    printf    ("A idade media de %s e %s e de %.1lf anos.", nome1, nome2, media);
+
+    return 0;
+}
