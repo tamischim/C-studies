@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main () {
+
+    double nota1, nota2, notafinal;
+
+    printf ("UNIVERSIDADE FEDERAL TECNOLOGICA DO PARANA - UFTPR %\n");
+    printf ("Curso de Ciencias da Computacao - Notas finais %\n");
+    printf ("Digite a nota do primeiro trimestre: ");
+    scanf  ("%lf", &nota1);
+    printf ("Digite a nota do segundo trimestre: ");
+    scanf  ("%lf", &nota2);
+
+    notafinal = nota1 + nota2;
+
+    printf ("Nota final: %.1lf\n", notafinal);
+
+    if (notafinal > 60.0) {
+       printf("Aprovado!\n");
+    }
+    else {
+       printf("Reprovado!\n");
+    }
+
+    return 0;
+}
