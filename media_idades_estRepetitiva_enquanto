@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+int main (){
+
+    int idade, npessoas;
+    double soma, media;
+
+    printf("SISTEMA UNICO DE SAUDE - SUS\n");
+    printf("Media idades\n");
+    printf("Digite as idades:\n ");
+    scanf ("%d", &idade);
+
+    if (idade < 0){
+        printf ("Impossivel calcular!\n");
+
+    }
+    else {
+        soma = 0;
+        npessoas = 0;
+
+        while (idade >= 0) {
+            soma = soma + idade;
+            npessoas++;
+            scanf ("%d", &idade);
+        }
+
+    media = soma / npessoas;
+    printf ("Media = %.2lf", media);
+    }
+
+    return 0;
+}
