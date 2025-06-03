@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main (){
+
+    int n, i, j, qntnegativos;
+
+    printf("UNIVERSIDADE FEDERAL TECNOLOGICA DO PARANA - UFTPR");
+    printf("Curso de Ciencias da Computacao - Matrizes");
+    printf("\n");
+    printf("Qual a ordem da matriz? ");
+    scanf ("%d", &n);
+
+    int matriz [n][n];
+
+    for (i = 0 ; i < n ; i++){
+        for (j = 0 ; j < n ; j++){
+            printf("Elemento [%d, %d]: ", i, j);
+            scanf ("%d", &matriz[i][j]);
+        }
+    }
+
+    printf("\nDiagonal principal: \n");
+
+    for (i = 0 ; i < n ; i++){
+        printf(" %d ", matriz[i][i]);
+    }
+
+    qntnegativos = 0;
+    for (i = 0 ; i < n ; i++){
+        for (j = 0 ; j < n ; j++){
+            if (matriz[i][j] < 0){
+                qntnegativos++;
+            }
+        }
+    }
+
+    printf("\nQuantidade de negativos: %d\n", qntnegativos);
+
+    return 0;
+}
