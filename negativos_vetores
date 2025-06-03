@@ -2,7 +2,7 @@
 
 int main (){
 
-    int n;
+    int n, i;
 
     printf("UNIVERSIDADE FEDERAL TECNOLOGICA DO PARANA - UFTPR\n");
     printf("Curso de Ciencias da Computacao\n");
@@ -11,14 +11,14 @@ int main (){
 
     int vet[n];
 
-    for (int i=0 ; i<n ; i++){
+    for (i=0 ; i<n ; i++){
         printf("Digite um numero: ");
         scanf ("%d", &vet[i]);
     }
 
     printf("Numeros negativos: \n");
 
-    for (int i=0 ; i<0 ; i++) {
+    for (i=0 ; i<n ; i++) {
         if (vet[i] < 0) {
             printf("%d\n", vet[i]);
         }
